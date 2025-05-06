@@ -1,27 +1,21 @@
 # ProductsList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+CafeNest-cart is a sample Angular application designed to simulate a café ordering system. The app allows users to browse a selection of dessert items, add them to a shopping cart, adjust quantities, and place an order—all within a clean, responsive interface. Built entirely in Angular, the project demonstrates fundamental frontend development concepts such as component-based architecture, data binding, routing, and in-memory cart state management. It serves as a practical example for anyone learning Angular or building a simple e-commerce-style frontend without a backend integration.
 
-## Development server
+CafeNest-cart is a simple Angular-based dessert ordering app that features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+🍰 Product listings with images and prices
 
-## Code scaffolding
+🛒 Cart functionality with quantity controls
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+✅ Order placement flow (no backend)
 
-## Build
+🧁 Designed for a café-style dessert cart experience
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+This project was built for learning and demonstrating Angular basics including components, routing, state management, and responsive UI design.
+![cafenest1](https://github.com/user-attachments/assets/3a6d60a0-7654-4a9f-8437-f58d1e580b7d)
+![cafenest2](https://github.com/user-attachments/assets/bdfeb8f2-1eb9-454d-809b-1500b6ea50ee)
+![cafenest1](https://github.com/user-attachments/assets/a8e11b57-05a1-4658-bceb-8f7a85110913)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
