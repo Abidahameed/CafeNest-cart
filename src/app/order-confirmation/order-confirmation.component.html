@@ -1,0 +1,25 @@
+<div class="confirm-dialog">
+  <img src="/assets/images/checkmark.jpg" alt="Confirmed" class="check-icon">
+  <h2>Order Confirmed!</h2>
+  <p>Your delicious treats are on the way 🍰</p>
+
+  <div class="order-summary">
+    <div *ngFor="let item of cart" class="summary-item">
+      <img [src]="item.image" alt="{{ item.name }}" />
+      <div class="details">
+        <strong>{{ item.name }}</strong>
+        <div>{{ item.quantity }}x ${{ item.price }}</div>
+      </div>
+      <div class="price">
+        ${{ item.quantity * item.price }}
+      </div>
+    </div>
+    <hr />
+    <div class="total">
+      <span>Order Total:</span>
+      <strong>${{ getTotal() }}</strong>
+    </div>
+  </div>
+
+  <button mat-button color="primary" mat-dialog-close (click)="Closedialog()">Let's Order More</button>
+</div>

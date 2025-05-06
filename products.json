@@ -1,0 +1,66 @@
+{
+   "products" : [
+      {
+         "image": "./assets/images/noodles.jpg",
+         "name": "Spicy Garlic Noodles",
+         "category": "Asian",
+         "price": 220
+       },
+    { 
+      "image": "./assets/images/PepperoniPizza.jpg",
+      "name": "Pepperoni Pizza",
+      "category": "Italian",
+      "price": 320
+    },
+    { 
+      "image": "./assets/images/WafflesBerries.jpg",
+      "name": "Waffles with Berries",
+      "category": "Dessert",
+      "price": 250
+    },
+    { 
+      "image": "./assets/images/ChocolateWaffles.jpg",
+      "name": "Chocolate Waffles",
+      "category": "Dessert",
+      "price": 270
+    },
+    { 
+      "image": "./assets/images/ChickenSandwich.jpg",
+      "name": "Grilled Chicken Sandwich",
+      "category": "Fast Food",
+      "price": 230
+    },
+    { 
+      "image": "./assets/images/CaesarSalad.jpg",
+      "name": "Caesar Salad",
+      "category": "Healthy",
+      "price": 200
+    },
+    { 
+      "image": "./assets/images/AlfredoPasta.jpg",
+      "name": "Alfredo Pasta",
+      "category": "Italian",
+      "price": 280
+    },
+    { 
+      "image": "./assets/images/CheeseFries.jpg",
+      "name": "Cheese Fries",
+      "category": "Snack",
+      "price": 150
+    },
+    { 
+      "image": "./assets/images/StrawberryMilkshake.jpg",
+      "name": "Strawberry Milkshake",
+      "category": "Beverage",
+      "price": 180
+    }
+
+],
+
+"cart" : [
+   {
+
+   }
+]
+
+}

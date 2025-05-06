@@ -1,0 +1,65 @@
+<div class="page-layout">
+  <!-- Left: Product Cards -->
+  <div class="product-section">
+    <h2 class="section-title">
+      <img src="/assets/images/logo (3).png" alt="Cafe Icon" class="section-icon" />
+      Cafe Nest
+    </h2>
+    <div class="product-grid">
+
+      <mat-card class="product-card" *ngFor="let product of products">
+        <img class="product-image" [src]="product.image" [alt]="product.name">
+
+        <div class="cart-button">
+          <ng-container *ngIf="!product.quantity || product.quantity === 0; else quantityControls">
+            <button class="addtoCart-btn" (click)="addToCart(product)">
+              🛒 Add to Cart
+            </button>
+          </ng-container>
+        
+          <ng-template #quantityControls>
+            <div class="quantity-controls">
+              <button class="qty-btn" (click)="decreaseQty(product)">−</button>
+              <span class="qty-value">{{ product.quantity }}</span>
+              <button class="qty-btn" (click)="increaseQty(product)">+</button>
+            </div>
+          </ng-template>
+        </div>
+
+        
+        <mat-card-content class="card-details">
+          <div class="product-category">{{ product.category }}</div>
+          <div class="product-name">{{ product.name }}</div>
+          <div class="price">${{ product.price.toFixed(2) }}</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="cart-sidebar">
+    <h2>Your Cart ({{ cart.length }})</h2>
+  
+    <div *ngIf="cart.length > 0; else emptyCart">
+      <div *ngFor="let item of cart" class="cart-item">
+        <div class="item-info">
+          <strong>{{ item.name }}</strong>
+          <div>{{ item.quantity }}x ${{ item.price }} = ${{ item.price * item.quantity }}</div>
+        </div>
+        <button class="remove-btn" (click)="removeFromCart(item)">✖</button>
+      </div>
+  
+      <hr />
+      <div class="total">Order Total: ${{ getTotal() }}</div>
+      <button class="confirm-btn" (click)="confirmOrder()">Confirm Order</button>
+    </div>
+  
+    <ng-template #emptyCart>
+      <div class="empty-cart">
+        <img src="/assets/images/EmptyCart.jpg" alt="Empty Cart" class="empty-cart-image" />
+        <p>Your added items will appear here</p>
+      </div>
+    </ng-template>
+  </div>
+  
+
+</div>
